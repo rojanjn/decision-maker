@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description"
@@ -22,7 +21,16 @@
         <h2>Can't decide? Let Rojan choose your destiny.</h2>
     </header>
     <main>
+        <!-- user types in their question here -->
+        <form>                
+            <input type="text" name="askQ" id="askQ" placeholder="Ask the Ball...">
+        </form>
 
+        <!-- user submits their answer -->
+        <button id="askBtn">Your Fate Says:</button>
+
+        <!-- the random answer shows up once it is submitted -->
+        <p id="answer"></p>
     </main>
 
     <footer>
