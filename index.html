@@ -1,28 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description"
         content="This is a HTML/CSS/JS website, that randomly chooses an answer once the user asks a question.">
     <meta name="keywords" content="HTML, CSS, JavaScript, random, decision, 8ball">
     <meta name="author" content="Rojan Jafarnezhad">
-    
+
     <title>8 Ball</title>
 
-    <!-- css file linked -->
-    <link rel="stylesheet" href="main.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Inconsolata:wght@200..900&family=Slackey&display=swap"
+        rel="stylesheet">
 
     <!-- tab icon -->
     <link rel="icon" href="img/question_1069222.png">
+
+    <!-- css -->
+    <style>
+        body {
+            background: linear-gradient(#1c2128, black, #1c2128);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+        }
+
+        h1 {
+            color: #EAEFEF;
+            font-size: 3em;
+            font-family: "Slackey", sans-serif;
+            font-weight: 100;
+        }
+
+        h2 {
+            color: #909194;
+        }
+
+        h2,
+        #askQ,
+        #askBtn {
+            font-family: "Comfortaa", sans-serif;
+
+        }
+
+        #askQ{
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Ask the Ball, Obey the Ball</h1>
         <h2>Can't decide? Let Rojan choose your destiny.</h2>
     </header>
+
     <main>
         <!-- user types in their question here -->
-        <form>                
+        <form>
             <input type="text" name="askQ" id="askQ" placeholder="Ask the Ball...">
         </form>
 
@@ -41,4 +81,5 @@
         <script src="script.js"></script>
     </footer>
 </body>
+
 </html>
