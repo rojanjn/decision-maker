@@ -12,3 +12,16 @@ const answers = [
     "Go for it.",
     "Don't hesitate on it."
 ]
+
+document.getElementById("askBtn").addEventListener("click", ()=>{
+    const input = document.getElementById("askQ").ariaValueMax.trim();
+    const answerE1 = document.getElementById("answer");
+
+    if (input === ""){
+        answerE1.textContent = "You must ask a question, Champ!";
+        return;
+    }
+
+    const randomIndex = Math.floor(Math.random() * answers.length);
+    answerE1.textContent = answers[randomIndex];
+});
